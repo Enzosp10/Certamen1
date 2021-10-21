@@ -14,6 +14,7 @@ public class MainActivity2 extends AppCompatActivity {
      private TextView Nom;
      private TextView Prom;
      private TextView Info;
+     private TextView Carr;
 
 
 
@@ -32,10 +33,15 @@ public class MainActivity2 extends AppCompatActivity {
 
         Nom= (TextView) findViewById(R.id.NombreEstudiante);
         Nom.setText(N1);
+        Carr= (TextView) findViewById(R.id.eTinformacion);
+        Carr.setText(C1);
         Prom= (TextView) findViewById(R.id.Promedio);
         Prom.setText(R1.toString());
         Info= (TextView) findViewById(R.id.eTinformacion);
-        Info.setText(N1+" Que estudia  "+R1);
+        Info.setText(N1+" Que estudia la carrera de "+C1+" y su promedio de notas es de:  "+R1);
+
+
+
 
         Btnvolver.setOnClickListener(new View.OnClickListener() {
 
@@ -54,8 +60,8 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
 
-    public void  RecibirDatos(){
-        Bundle extras = getIntent().getExtras();
+    private void  RecibirDatos(){
+        Bundle Info_ = getIntent().getExtras();
 
     }
 }

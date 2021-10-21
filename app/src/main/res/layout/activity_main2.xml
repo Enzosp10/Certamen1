@@ -63,33 +63,33 @@
 
     <TextView
         android:id="@+id/NombreEstudiante"
+        android:layout_width="69dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="128dp"
         android:text="Textbiew"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="256dp"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="252dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="248dp"
         android:text="Promedio:"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/NombreEstudiante" />
 
     <TextView
         android:id="@+id/Promedio"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="256dp"
+        android:layout_width="72dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="112dp"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/NombreEstudiante" />
 
     <TextView
         android:id="@+id/eTinformacion"
