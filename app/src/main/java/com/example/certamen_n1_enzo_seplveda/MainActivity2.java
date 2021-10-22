@@ -41,8 +41,6 @@ public class MainActivity2 extends AppCompatActivity {
         Info.setText(N1+" Que estudia la carrera de "+C1+" y su promedio de notas es de:  "+R1);
 
 
-
-
         Btnvolver.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -53,12 +51,7 @@ public class MainActivity2 extends AppCompatActivity {
             }
         });
 
-
-
-
-
     }
-
 
     private void  RecibirDatos(){
         Bundle Info_ = getIntent().getExtras();

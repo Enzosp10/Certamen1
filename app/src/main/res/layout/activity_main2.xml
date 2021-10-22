@@ -63,10 +63,10 @@
 
     <TextView
         android:id="@+id/NombreEstudiante"
-        android:layout_width="69dp"
-        android:layout_height="24dp"
+        android:layout_width="110dp"
+        android:layout_height="53dp"
         android:layout_marginTop="92dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginEnd="100dp"
         android:text="Textbiew"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
@@ -83,10 +83,10 @@
 
     <TextView
         android:id="@+id/Promedio"
-        android:layout_width="72dp"
-        android:layout_height="22dp"
-        android:layout_marginTop="96dp"
-        android:layout_marginEnd="112dp"
+        android:layout_width="107dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="100dp"
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/NombreEstudiante" />
@@ -100,5 +100,16 @@
         android:text="TextView"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toBottomOf="@+id/Promedio" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="55dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+        app:layout_constraintTop_toBottomOf="@+id/eTinformacion"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        tools:srcCompat="@android:mipmap/sym_def_app_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
