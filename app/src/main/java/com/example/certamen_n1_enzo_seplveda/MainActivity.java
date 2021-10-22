@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.google.android.material.snackbar.BaseTransientBottomBar;
+import com.google.android.material.snackbar.Snackbar;
+
 public class MainActivity extends AppCompatActivity {
 
      Button btncalc;
@@ -38,15 +41,23 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
+                String prueba = Nombre.getText().toString();
+                if (Nombre.getText().toString().equals("")|| Carrera.getText().toString().equals("") || nota1.getText().toString().equals("")|| nota2.getText().toString().equals("")||nota3.getText().toString().equals("")||prueba.equals("")){
+                    Snackbar mySnackbar = Snackbar.make(view, "Debe ingresar sus datos",Snackbar.LENGTH_LONG);
+                    mySnackbar.show();
 
-                float Resultado=(Float.parseFloat(nota1.getText().toString())+Float.parseFloat(nota2.getText().toString())+Float.parseFloat(nota3.getText().toString()))/3;
-                act.putExtra("Nombre",Nombre.getText().toString());
-                act.putExtra("Carrera",Carrera.getText().toString());
-                act.putExtra("Resultado",Resultado);
+                }
+                else{
+                    float Resultado=(Float.parseFloat(nota1.getText().toString())+Float.parseFloat(nota2.getText().toString())+Float.parseFloat(nota3.getText().toString()))/3;
+                    act.putExtra("Nombre",Nombre.getText().toString());
+                    act.putExtra("Carrera",Carrera.getText().toString());
+                    act.putExtra("Resultado",Resultado);
 
-                Intent btncalc = new Intent(MainActivity.this,MainActivity2.class);
+                    Intent btncalc = new Intent(MainActivity.this,MainActivity2.class);
 
-                startActivity(act);
+                    startActivity(act);
+                }
+
             }
         });
     }
