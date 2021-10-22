@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View view) {
-                String prueba = Nombre.getText().toString();
-                if (Nombre.getText().toString().equals("")|| Carrera.getText().toString().equals("") || nota1.getText().toString().equals("")|| nota2.getText().toString().equals("")||nota3.getText().toString().equals("")||prueba.equals("")){
+
+                if (Nombre.getText().toString().equals("")|| Carrera.getText().toString().equals("")){
                     Snackbar mySnackbar = Snackbar.make(view, "Debe ingresar sus datos",Snackbar.LENGTH_LONG);
                     mySnackbar.show();
 
